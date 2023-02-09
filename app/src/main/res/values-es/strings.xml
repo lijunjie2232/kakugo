@@ -37,6 +37,8 @@
     <string name="word_to_meaning">Prueba de palabra a significado (日の出→amanecer)</string>
     <string name="meaning_to_word">Prueba de significado a palabra (amanecer→日の出)</string>
 
+    <string name="hiragana_to_katakana">" Prueba de hiragana a katakana (ひ→ヒ)"</string>
+    <string name="katakana_to_hiragana">" Prueba de katakana a hiragana(ヒ→ひ)"</string>
     <string name="hiragana_to_romaji_title">Prueba de hiragana a romaji</string>
     <string name="romaji_to_hiragana_title">Prueba de romaji a hiragana</string>
     <string name="hiragana_to_romaji_typing_title">Romanji a hiragana</string>
@@ -59,6 +61,8 @@
     <string name="word_to_meaning_title">Prueba de palabra a significado</string>
     <string name="meaning_to_word_title">Prueba de significado a palabra</string>
 
+    <string name="hiragana_to_katakana_title">" Prueba de hiragana a katakana"</string>
+    <string name="katakana_to_hiragana_title">" Prueba de katakan a hiragana"</string>
     <string name="sure">Seguro</string>
     <string name="maybe">Tal vez</string>
     <string name="dont_know">No lo sé</string>

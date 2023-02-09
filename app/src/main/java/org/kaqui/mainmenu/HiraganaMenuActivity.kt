@@ -24,6 +24,11 @@ class HiraganaMenuActivity : BaseActivity() {
                     }
 
                     verticalLayout {
+                        button(R.string.hiragana_to_katakana) {
+                            setOnClickListener { startTest(this@HiraganaMenuActivity, TestType.HIRAGANA_TO_KATAKANA) }
+                        }.lparams(width = matchParent, height = wrapContent) {
+                            margin = dip(4)
+                        }
                         button(R.string.hiragana_to_romaji) {
                             setOnClickListener { startTest(this@HiraganaMenuActivity, TestType.HIRAGANA_TO_ROMAJI) }
                         }.lparams(width = matchParent, height = wrapContent) {

@@ -8,14 +8,14 @@ android {
     buildFeatures {
         viewBinding true
     }
-    signingConfigs {
-        debugconfig {
-            keyAlias 'androiddebugkey'
-            storeFile file('/home/blastrock/.android/debug.keystore')
-            keyPassword 'android'
-            storePassword 'android'
-        }
-    }
+//    signingConfigs {
+//        debugconfig {
+//            keyAlias 'panzer'
+//            storeFile file('F:\\android\\exploit\\singature\\test.jks')
+//            keyPassword '06050605'
+//            storePassword '06050605'
+//        }
+//    }
     compileSdkVersion 31
     defaultConfig {
         applicationId "org.kaqui"
@@ -37,10 +37,10 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debugconfig
+//            signingConfig signingConfigs.debugconfig
         }
         debug {
-            signingConfig signingConfigs.debugconfig
+//            signingConfig signingConfigs.debugconfig
         }
     }
     testOptions {
@@ -66,4 +66,8 @@ dependencies {
     implementation "org.jetbrains.anko:anko-design:$anko_version"
 
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // https://mvnrepository.com/artifact/dev.esnault.wanakana/wanakana-core
+    implementation("dev.esnault.wanakana:wanakana-core:1.1.1")
+
 }

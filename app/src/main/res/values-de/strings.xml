@@ -32,6 +32,8 @@
     <string name="reading_to_word">Lesung zu Vokabel (ひので→日の出)</string>
     <string name="word_to_meaning">Vokabel zu Bedeutung (日の出→sunrise)</string>
     <string name="meaning_to_word">Bedeutung zu Vokabel (sunrise→日の出)</string>
+    <string name="hiragana_to_katakana">hiragana zu katakana(ひ→ヒ)</string>
+    <string name="katakana_to_hiragana">katakana zu hiragana(ヒ→ひ)</string>
     <string name="hiragana_to_romaji_title">Hiragana zu Romaji Quiz</string>
     <string name="romaji_to_hiragana_title">Romaji zu Hiragana</string>
     <string name="hiragana_to_romaji_typing_title">Hiragana zu Romaji Schreibung</string>
@@ -49,6 +51,8 @@
     <string name="reading_to_word_title">Lesung zu Vokabel</string>
     <string name="word_to_meaning_title">Vokabel zu Bedeutung</string>
     <string name="meaning_to_word_title">Bedeutung zu Vokabel</string>
+    <string name="hiragana_to_katakana_title">hiragana zu katakana Quiz</string>
+    <string name="katakana_to_hiragana_title">katakana zu hiragana Quiz</string>
     <string name="sure">Sicher</string>
     <string name="maybe">Möglich</string>
     <string name="dont_know">Weiß nicht</string>

@@ -25,8 +25,10 @@ class TestEngine(
 
         fun getItemView(db: Database, testType: TestType): LearningDbView =
                 when (testType) {
-                    TestType.HIRAGANA_TO_ROMAJI, TestType.HIRAGANA_TO_ROMAJI_TEXT, TestType.ROMAJI_TO_HIRAGANA, TestType.HIRAGANA_DRAWING -> db.getHiraganaView(getKnowledgeType(testType))
-                    TestType.KATAKANA_TO_ROMAJI, TestType.KATAKANA_TO_ROMAJI_TEXT, TestType.ROMAJI_TO_KATAKANA, TestType.KATAKANA_DRAWING -> db.getKatakanaView(getKnowledgeType(testType))
+                    TestType.HIRAGANA_TO_ROMAJI, TestType.HIRAGANA_TO_ROMAJI_TEXT, TestType.ROMAJI_TO_HIRAGANA, TestType.HIRAGANA_DRAWING, TestType.HIRAGANA_TO_KATAKANA
+                    -> db.getHiraganaView(getKnowledgeType(testType))
+                    TestType.KATAKANA_TO_ROMAJI, TestType.KATAKANA_TO_ROMAJI_TEXT, TestType.ROMAJI_TO_KATAKANA, TestType.KATAKANA_DRAWING, TestType.KATAKANA_TO_HIRAGANA
+                    -> db.getKatakanaView(getKnowledgeType(testType))
 
                     TestType.KANJI_TO_READING, TestType.KANJI_TO_MEANING, TestType.READING_TO_KANJI, TestType.MEANING_TO_KANJI, TestType.KANJI_DRAWING, TestType.KANJI_COMPOSITION -> db.getKanjiView(getKnowledgeType(testType))
 

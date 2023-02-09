@@ -37,6 +37,8 @@
     <string name="word_to_meaning">Quizz mot à sens (日の出→lever de soleil)</string>
     <string name="meaning_to_word">Quizz sens à mot (lever de soleil→日の出)</string>
 
+    <string name="hiragana_to_katakana">Quiz hiragana à katakana (ひ→ヒ)</string>
+    <string name="katakana_to_hiragana">Quiz katakana à hiragana (ヒ→ひ)</string>
     <string name="hiragana_to_romaji_title">Quizz hiragana à romaji</string>
     <string name="romaji_to_hiragana_title">Quizz romaji à hiragana</string>
     <string name="hiragana_to_romaji_typing_title">Écriture d\'hiragana en romaji</string>
@@ -59,6 +61,8 @@
     <string name="word_to_meaning_title">Quizz mot à sens</string>
     <string name="meaning_to_word_title">Quizz sens à mot</string>
 
+    <string name="hiragana_to_katakana_title">Quiz hiragana à katakana</string>
+    <string name="katakana_to_hiragana_title">Quiz katakana à hiragana</string>
     <string name="sure">Sûr</string>
     <string name="maybe">Pas sûr</string>
     <string name="dont_know">Ne sait pas</string>

@@ -44,7 +44,10 @@ class MainActivity : BaseActivity(), CoroutineScope {
                 verticalLayout {
                     padding = dip(8)
 
-                    appTitleImage(this@MainActivity).lparams(width = matchParent, height = dip(80)) {
+                    appTitleImage(this@MainActivity).lparams(
+                        width = matchParent,
+                        height = dip(80)
+                    ) {
                         margin = dip(8)
                     }
 
@@ -93,11 +96,16 @@ class MainActivity : BaseActivity(), CoroutineScope {
 
         val lastVersionChangelog = defaultSharedPreferences.getInt("last_version_changelog", 0)
         if (lastVersionChangelog < BuildConfig.VERSION_CODE) {
-            alert(HtmlCompat.fromHtml(getString(R.string.changelog_contents), HtmlCompat.FROM_HTML_MODE_COMPACT)) {
+            alert(
+                HtmlCompat.fromHtml(
+                    getString(R.string.changelog_contents),
+                    HtmlCompat.FROM_HTML_MODE_COMPACT
+                )
+            ) {
                 okButton {
                     defaultSharedPreferences.edit()
-                            .putInt("last_version_changelog", BuildConfig.VERSION_CODE)
-                            .apply()
+                        .putInt("last_version_changelog", BuildConfig.VERSION_CODE)
+                        .apply()
                 }
             }.show()
         }
@@ -129,7 +137,10 @@ class MainActivity : BaseActivity(), CoroutineScope {
         } catch (e: Exception) {
             Log.e(TAG, "Failed to initialize database", e)
             launch(job) {
-                alert(getString(R.string.failed_to_init_db, e.message), getString(R.string.database_error)) {
+                alert(
+                    getString(R.string.failed_to_init_db, e.message),
+                    getString(R.string.database_error)
+                ) {
                     okButton {}
                 }.show()
             }
